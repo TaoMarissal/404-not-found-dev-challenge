@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+.texte1{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 77px;
+    top: 40px;
+    font-family: "Inconsolata";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.11em;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+}
+
+.texte2{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    float: left;
+    font-family: 'Montserrat';
+    color: #BDBDBD
+}
+
+.texte2 span{
+    font-weight: 700;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-top: 265px;
+    height: auto;
+    width: 100vw;
+}
+
+.main img{
+    position: relative;
+    height: 447px;
+    width: 539px;
+    padding-right: 8.2%;
+}
+
+.main_right{
+    position: relative;
+    /*background-color: tomato;*/
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding-right: 8.2%;
+}
+
+.texte_one{
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: auto;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    margin: 0;
+}
+
+.texte_two{
+    position: relative;
+    width: calc(100%/1.7);
+    height: auto;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+}
+
+.button{
+    position: relative;
+    left: 3px;
+    font-family: 'Space Mono';
+    font-size: 14px;
+    color: white;
+    padding: 23px 43px;
+    background-color: #333;
+    border: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+    .main >img{
+        height: 31.2vw;
+        width: 37.5vw;
+    }
+
+    .texte_one{
+        line-height: 6.59vw;
+    }
+    
+    .texte_two{
+        line-height: 2.5vw;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .texte1{
+        left: 24px;
+        top: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main{
+        flex-flow: column-reverse ;
+        align-items: center;
+        margin-top: 109px;
+    }
+
+    .texte_one{
+        line-height: 71px;
+        font-size: 48px;
+        width: auto;
+        padding: 0 0.26% 0 6.4%;
+    }
+    
+    .texte_two{
+        width: auto;
+        line-height: 27px;
+        font-size: 18px;
+        padding: 0 6.4% 0 6.1%;
+    }
+
+    .button{
+        left:6.4%;
+    }
+
+    .main_right{
+        width: 100%;
+        float: none;
+        padding-right: 0px;
+    }
+
+    .main img{
+        height: auto;
+        width: 76%;
+        padding-right: 0px;
+    }
+}
